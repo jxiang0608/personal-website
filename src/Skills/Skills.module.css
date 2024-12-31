@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+.skillsSection {
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    font-family: Avenir, sans-serif;
+
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.skillName {
+    font-size: 1rem;
+    font-weight: 500;
+}

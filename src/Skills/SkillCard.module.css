@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    /* background-color: hsl(240, 94%, 7%); */
+    /* background-color: #2a2a3d; */
+    background-color: #2c2c54;
+    border-radius: 50%;
+    box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Prevent any overflow from the images */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 3rem;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    overflow: hidden; /* Prevent any overflow from the images */
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 500;
+}
