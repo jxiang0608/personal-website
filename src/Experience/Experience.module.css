@@ -100,6 +100,6 @@
 
     .card {
         flex-direction: column;
-        justify-self: center;
+        justify-content: space-between;
     }
 }
