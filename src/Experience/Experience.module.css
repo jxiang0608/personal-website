@@ -20,6 +20,7 @@
 
 .card {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: top;
     gap: 20px;
@@ -73,8 +74,9 @@
     font-size: 0.9rem;
     color: #dadada;
     margin: 0;
-    /* width: max-content; */
-    flex-wrap: wrap;
+    display: inline-block;
+    width: max-content; /* Default behavior for larger screens */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .description {
@@ -88,4 +90,15 @@
 
 .description li {
     margin-bottom: 6px;
+}
+
+@media (max-width: 768px) { /* Adjust for smaller screens */
+    .period {
+        width: auto; /* Allow the content to adjust */
+        white-space: normal; /* Enable wrapping */
+    }
+
+    .card {
+        flex-direction: column;
+    }
 }
