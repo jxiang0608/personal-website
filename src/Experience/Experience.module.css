@@ -98,8 +98,15 @@
         white-space: normal; /* Enable wrapping */
     }
 
+    .experienceCards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
     .card {
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
     }
 }
