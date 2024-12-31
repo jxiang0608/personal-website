@@ -64,7 +64,7 @@
 @media (max-width: 768px) {
     .navLinks {
         flex-direction: column;
-        gap: 10px;
+        gap: 13px;
         background-color: #2c2c54;
         position: absolute;
         top: 50px;
